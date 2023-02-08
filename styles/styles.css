@@ -1,0 +1,357 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  color: #242424;
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-style: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.main-index {
+color: #000000;
+background-color: #FFFFFF;
+background-image: url("../image/logo-background.jpg");
+background-size: 100% auto;
+background-repeat: no-repeat;
+}
+
+.text-1 {
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.advantages-list {
+text-align: center;
+}
+
+.advantages-item {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: #82B3D3;;
+}
+
+.text-2 {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.features {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background: rgba(131, 179, 211, 0.12);
+}
+
+.text-3 {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.text-4 {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.button-all {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #756157;
+}
+
+.subscription {
+color: #000000;
+background-color: #FFFFFF;
+background: url(../image/background-1.jpg);
+width: 1200px;
+height: 414.86px;
+background-size: 100% auto;
+background-repeat: no-repeat;
+}
+
+.button-right{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #82B3D3;
+}
+
+.page-footer {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.page-footer a {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.main-inner-catalog {
+background-image: url(../image/background-2.jpg);
+width: 1200;
+height: 412;
+background-size: 100% auto;
+background-repeat: no-repeat;
+}
+
+.inner-header-title {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+color: #FFFFFF;
+}
+
+.breadcrumbs {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+}
+
+.breadcrumbs-item {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+}
+
+.catalog-products {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #FFFFFF;
+}
+
+.catalog-filter-item {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #FFFFFF;
+}
+
+.found {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.select-control {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.product-card-title {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.subtitle {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.product-card-price {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: right;
+color: #333333;
+}
+
+.button-card {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #756157;
+}
+
+.button-card-blue {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #82B3D3;
+}
+
+.button-card-green {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #7DB54F;
+}
+
+.text-5 {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.button-on {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #82B3D3;
+}
