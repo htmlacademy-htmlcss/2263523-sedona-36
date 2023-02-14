@@ -60,6 +60,22 @@ body {
   margin-left: auto;
 }
 
+.button-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 50px;
+  gap: 10px;
+  width: 160px;
+  height: 36px;
+  background: #756157;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-style: 700;
@@ -92,6 +108,16 @@ body {
 .logo-hero {
   display: block;
   margin: 0 auto;
+}
+
+.heading-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 69px 0px;
+  gap: 25px;
+  background: #FFFFFF;
 }
 
 .text-1 {
@@ -528,4 +554,15 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
