@@ -1,6 +1,4 @@
-@@ -0,
-0 + 1,
-357 @@ @font-face {
+@font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -27,7 +25,7 @@ body {
   align-items: flex-start;
   padding: 0px;
   width: 1200px;
-  height: 3556.86px;
+  height: 3557px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -135,7 +133,6 @@ body {
 }
 
 .text-1 {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -318,13 +315,6 @@ body {
   background-color: #FFFFFF;
 }
 
-.page-footer-container {
-  display: flex;
-  width: 940px;
-  margin: 0;
-  padding: 40px 70px 30px 70px;
-}
-
 .contacts {
   display: flex;
   justify-content: space-between;
@@ -458,6 +448,7 @@ body {
 }
 
 .found {
+  display: flex;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -466,6 +457,8 @@ body {
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
+  width: 338px;
+  height: 36px;
 }
 
 .select-control {
@@ -644,12 +637,6 @@ body {
   height: 120px;
 }
 
-.footer-container {
-  display: flex;
-  width: 940px;
-  margin: 0;
-  padding: 40px 70px 30px 70px;
-}
 
 .contacts-catalog {
   display: flex;
