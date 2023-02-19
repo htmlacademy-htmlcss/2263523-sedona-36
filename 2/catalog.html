@@ -36,10 +36,9 @@
               <span class="notification-badgel">12</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Хочу сюда!</span></a>
-          </li>
+          <form class="navigation-item" action="https://echo.htmlacademy.ru/" method="post">
+            <button class="navigation-button" type="submit">Хочу сюда</button>
+          </form>
         </ul>
       </nav>
     </header>
@@ -113,7 +112,7 @@
       </fieldset>
       </form>
 
-      <section class="catalog">
+      <section class="cards-container">
         <div class="found">
           <h2>Найдено гостиниц: 38</h2>
         </div>
@@ -122,16 +121,21 @@
           <option value="cheap">Сначала популярное</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать сеткой</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать списком</span>
-        </a>
+        <div class="control-cards">
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать сеткой</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать списком</span>
+          </a>
+        </div>
+      </section>
 
+      <section class="catalog-product-list">
+        <h2 class="visually-hidden">Список гостиниц</h2>
         <ul class="product-list">
           <li class="product-card-1">
             <img class="product-card-image" src="image/hotel-1.jpg" width="300" height="212" alt="Отель-1">
@@ -139,7 +143,7 @@
             </a>
             <span class="subtitle">Гостиница</span>
             <span class="product-card-price">От 4000 ₽</span>
-            <form>
+            <form class="product-form" action="https://echo.htmlacademy.ru/" method="post">
               <button class="button-card" type="submit">подробнее</button>
               <button class="button-card-blue" type="submit">в избранном</button>
               <p class="stars star-4">
@@ -192,31 +196,29 @@
             </form>
           </li>
         </ul>
-        <ul>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
+
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="subscription-catalog">
@@ -252,7 +254,7 @@
               </a>
             </li>
           </ul>
-            <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <img class="logo-footer-catalog" src="image/html-academy.svg" width="115" height="33" alt="логотип академии">
         </section>
       </div>
