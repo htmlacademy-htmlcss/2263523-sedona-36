@@ -24,12 +24,17 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 1200px;
+  height: 3556.86px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #242424;
   background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
@@ -49,6 +54,8 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 430px;
   margin: 0;
   padding: 0;
@@ -60,7 +67,12 @@ body {
   margin-left: auto;
 }
 
-.button-header {
+.navigation-list .navigation-user {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.navigation-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -69,14 +81,14 @@ body {
   gap: 10px;
   width: 160px;
   height: 36px;
+  color: #FFFFFF;
   background: #756157;
   border-radius: 4px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-family: "PT Sans", sans-serif;
   font-style: 700;
   font-size: 20px;
@@ -90,6 +102,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  padding-top: 66px;
 }
 
 .main-index {
@@ -108,6 +121,7 @@ body {
 .logo-hero {
   display: block;
   margin: 0 auto;
+  margin-bottom: 82px;
 }
 
 .heading-two {
@@ -186,8 +200,24 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  width: 1200px;
+  height: 385px;
   color: #000000;
   background: rgba(131, 179, 211, 0.12);
+
+}
+
+
+.features-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .interested {
@@ -198,17 +228,13 @@ body {
   gap: 10px;
   width: 1200px;
   height: 406px;
-  background: #FFFFFF;
 }
 
 .text-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 54px;
-  width: 592px;
-  height: 214px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 96px 304px;
 }
 
 .button-all {
@@ -217,20 +243,14 @@ body {
   justify-content: center;
   align-items: center;
   padding: 8px 50px;
+  margin: 54px 412px 96px 412px;
   gap: 10px;
   position: absolute;
   width: 376px;
   height: 52px;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
   color: #FFFFFF;
   background: #756157;
+  border-radius: 4px;
 }
 
 .subscription {
@@ -267,12 +287,18 @@ body {
   color: #FFFFFF;
 }
 
+.subscript {
+  margin-bottom: 20px;
+}
+
 .button-right {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  margin-top: 54px;
+  margin-bottom: 104px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -296,6 +322,7 @@ body {
   display: flex;
   width: 940px;
   margin: 0;
+  padding: 40px 70px 30px 70px;
 }
 
 .contacts {
@@ -306,7 +333,21 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 48px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-phon {
@@ -315,7 +356,10 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  margin-left: 236px;
 }
+
+
 
 .main-inner-catalog {
   background-image: url(../image/background-2.jpg);
@@ -332,9 +376,13 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  margin: 35px 635px 8px 70px;
 }
 
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -342,6 +390,7 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   color: #FFFFFF;
+  list-style: none;
 }
 
 .breadcrumbs-link {
@@ -351,6 +400,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+  margin-right: 10px;
 }
 
 .breadcrumbs-item {
@@ -383,6 +433,28 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  list-style: none;
+}
+
+.range-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px;
+  margin: 40px 70px 70px 140px;
+  gap: 70px;
+  width: 549px;
+  height: 160px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 192px;
 }
 
 .found {
@@ -397,12 +469,34 @@ body {
 }
 
 .select-control {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 50px 70px 40px 200px;
+  gap: 70px;
+  width: 522px;
+  height: 49px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.control-cards .button {
+  width: 48px;
+  height: 48px;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  list-style-type: none;
 }
 
 .product-card-title {
@@ -474,13 +568,10 @@ body {
 }
 
 .text-5 {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 96px 304px;
 }
 
 .button-on {
@@ -496,13 +587,34 @@ body {
   background: #82B3D3;
 }
 
-.pagination-item {
+.pagination-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  width: 1060px;
-  height: 60px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 44px;
+  padding: 14px 20px;
+  line-height: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #82B3D3;
+  text-decoration: none;
 }
 
 .subscription-catalog {
@@ -510,7 +622,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 96px 258px 104px;
+  margin-top: 96px;
+  margin-bottom: 104px;
   gap: 10px;
   width: 1200px;
   height: 414.86px;
@@ -535,6 +648,7 @@ body {
   display: flex;
   width: 940px;
   margin: 0;
+  padding: 40px 70px 30px 70px;
 }
 
 .contacts-catalog {
@@ -546,6 +660,9 @@ body {
 .footer-social-list-2 {
   display: flex;
   gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .footer-phone {
@@ -554,6 +671,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  margin-left: 236px;
 }
 
 .visually-hidden {
