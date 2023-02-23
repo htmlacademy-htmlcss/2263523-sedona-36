@@ -143,12 +143,10 @@ body {
   background-color: #FFFFFF;
 }
 
+
 .advantages-list {
   display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  justify-content: flex-start;
 }
 
 .advantages-item {
@@ -328,6 +326,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: 70px;
 }
 
 .footer-social-item {
@@ -347,6 +346,11 @@ body {
   color: #000000;
   text-decoration: none;
   margin-left: 236px;
+  margin-right: 236px;
+}
+
+.logo-footer {
+  margin-right: 70px;
 }
 
 
@@ -426,6 +430,26 @@ body {
   list-style: none;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  gap: 16px;
+}
+
+.product-card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card-title {
+  margin-top: 16px;
+}
+
+
 .range-price {
   display: flex;
   flex-direction: row;
@@ -455,6 +479,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-left: 70px;
   color: #000000;
   background-color: #FFFFFF;
   width: 338px;
@@ -484,12 +509,13 @@ body {
 }
 
 .product-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   list-style-type: none;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  gap: 20px;
 }
 
 .product-card-title {
@@ -650,6 +676,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: 70px;
 }
 
 .footer-phone {
@@ -659,6 +686,11 @@ body {
   color: #000000;
   text-decoration: none;
   margin-left: 236px;
+  margin-right: 236px;
+}
+
+.logo-footer-catalog {
+  margin-right: 70px;
 }
 
 .visually-hidden {
