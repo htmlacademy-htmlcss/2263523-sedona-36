@@ -28,7 +28,8 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span></a>
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -107,15 +108,13 @@
         <input class="control-input-min" type="number" name="min-price" value="0" placeholder="от" required>
         <input class="control-input-max" type="number" name="max-price" value="9000" placeholder="до" required>
         <input type="range" min="0" max="9000">
-        <button class="button" type="submit">Применить</button>
-        <button class="control" value="Сбросить">Сбросить</button>
+        <button class="button" type="button">Применить</button>
+        <button class="button" type="button">Сбросить</button>
       </fieldset>
       </form>
 
       <section class="cards-container">
-        <div class="found">
-          <h2>Найдено гостиниц: 38</h2>
-        </div>
+        <h2 class="found">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешовые</option>
           <option value="cheap">Сначала популярное</option>
@@ -137,63 +136,65 @@
       <section class="catalog-product-list">
         <h2 class="visually-hidden">Список гостиниц</h2>
         <ul class="product-list">
-          <li class="product-card-1">
+          <li class="product-card">
             <img class="product-card-image" src="image/hotel-1.jpg" width="300" height="212" alt="Отель-1">
-            <h3 class="product-card-title">Amara Resort & Spa</h3>
-            </a>
-            <span class="subtitle">Гостиница</span>
-            <span class="product-card-price">От 4000 ₽</span>
-            <form class="product-form" action="https://echo.htmlacademy.ru/" method="post">
-              <button class="button-card" type="submit">подробнее</button>
-              <button class="button-card-blue" type="submit">в избранном</button>
+            <div class="product-card-content">
+              <h3 class="product-card-title">Amara Resort & Spa</h3>
+              <span class="subtitle">Гостиница</span>
+              <span class="product-card-price">От 4000 ₽</span>
+              <button class="button-card" type="button">подробнее</button>
+              <button class="button-card-blue" type="button">в избранном</button>
               <p class="stars star-4">
                 <span class="visually-hidden">4 звёзд</span>
               </p>
-              <input class="rating" type="range" min="1" max="5" step="1">
               <input type="text" value="РЕЙТИНГ: 8,5">
+            </div>
           </li>
-          <li class="product-card-2">
-            <img class="product-card-image" src="image/hotel-2.jpg" width="300" height="212" alt="Отель-2">
-            <h3 class="product-card-title">Villas at Poco Diablo</h3>
-            </a>
-            <span class="subtitle">Гостиница</span>
-            <span class="product-card-price">От 5000 ₽</span>
-            <button class="button-card" type="submit">подробнее</button>
-            <button class="button-card-green" type="submit">в избранном</button>
-            <p class="stars star-4"></p>
-            <span class="visually-hidden">4 звёзды</span>
 
-            <input class="rating" type="range" min="1" max="5" step="1">
-            <input type="text" value="РЕЙТИНГ: 9,2">
+          <li class="product-card">
+            <img class="product-card-image" src="image/hotel-2.jpg" width="300" height="212" alt="Отель-2">
+            <div class="product-card-content">
+              <h3 class="product-card-title">Villas at Poco Diablo</h3>
+              </a>
+              <span class="subtitle">Гостиница</span>
+              <span class="product-card-price">От 5000 ₽</span>
+              <button class="button-card" type="button">подробнее</button>
+              <button class="button-card-green" type="button">в избранном</button>
+              <p class="stars star-4"></p>
+              <span class="visually-hidden">4 звёзды</span>
+              <input type="text" value="РЕЙТИНГ: 9,2">
+            </div>
           </li>
-          <li class="product-card-3">
+
+          <li class="product-card">
             <img class="product-card-image" src="image/hotel-3.jpg" width="300" height="212" alt="Отель-3">
-            <h3 class="product-card-title">Desert Quail Inn</h3>
-            </a>
-            <span class="subtitle">Гостиница</span>
-            <span class="product-card-price">От 2500 ₽</span>
-            <button class="button-card" type="submit">подробнее</button>
-            <button class="button-card-blue" type="submit">в избранном</button>
-            <p class="stars star-3">
-              <span class="visually-hidden">3 звёзды</span>
-            </p>
-            <input class="rating" type="range" min="1" max="5" step="1">
-            <input type="text" value="РЕЙТИНГ: 6,9">
+            <div class="product-card-content">
+              <h3 class="product-card-title">Desert Quail Inn</h3>
+              </a>
+              <span class="subtitle">Гостиница</span>
+              <span class="product-card-price">От 2500 ₽</span>
+              <button class="button-card" type="button">подробнее</button>
+              <button class="button-card-blue" type="button">в избранном</button>
+              <p class="stars star-3">
+                <span class="visually-hidden">3 звёзды</span>
+              </p>
+              <input type="text" value="РЕЙТИНГ: 6,9">
+            </div>
           </li>
-          <li class="product-card-4">
+
+          <li class="product-card">
             <img class="product-card-image" src="image/hotel-4.jpg" width="300" height="212" alt="Отель-4">
-            <h3 class="product-card-title">GreenTree Inn</h3>
-            </a>
-            <span class="subtitle">Гостиница</span>
-            <span class="product-card-price">От 1500 ₽</span>
-            <button class="button-card" type="submit">подробнее</button>
-            <button class="button-card-blue" type="submit">в избранном</button>
-            <p class="stars star-2">
-              <span class="visually-hidden">2 звёзды</span>
-            </p>
-            <input class="rating" type="range" min="1" max="5" step="1">
-            <input type="text" value="РЕЙТИНГ: 5,0">
-            </form>
+            <div class="product-card-content">
+              <h3 class="product-card-title">GreenTree Inn</h3>
+              <span class="subtitle">Гостиница</span>
+              <span class="product-card-price">От 1500 ₽</span>
+              <button class="button-card" type="button">подробнее</button>
+              <button class="button-card-blue" type="button">в избранном</button>
+              <p class="stars star-2">
+                <span class="visually-hidden">2 звёзды</span>
+              </p>
+              <input type="text" value="РЕЙТИНГ: 5,0">
+            </div>
           </li>
         </ul>
 
@@ -234,30 +235,28 @@
     </main>
 
     <footer class="page-footer-catalog">
-      <div class="footer-container">
-        <h2 class="visually-hidden" Социальные сети></h2>
-        <section class="contacts-catalog">
-          <ul class="footer-social-list-2">
-            <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-          </ul>
-          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <img class="logo-footer-catalog" src="image/html-academy.svg" width="115" height="33" alt="логотип академии">
-        </section>
-      </div>
+      <h2 class="visually-hidden" Социальные сети></h2>
+      <section class="contacts-catalog">
+        <ul class="footer-social-list-2">
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <img class="logo-footer-catalog" src="image/html-academy.svg" width="115" height="33" alt="логотип академии">
+      </section>
     </footer>
   </body>
 
